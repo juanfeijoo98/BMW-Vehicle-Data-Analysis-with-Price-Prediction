@@ -38,8 +38,7 @@ Para ejecutar este proyecto, necesitas las siguientes librerías (incluidas en `
 
 1. Clona este repositorio:
 
-   ```bash
-   git clone https://github.com/juanfeijoo98/BMW-Vehicle-Data-Analysis-with-Price-Prediction.git
+```bash
+git clone https://github.com/juanfeijoo98/BMW-Vehicle-Data-Analysis-with-Price-Prediction.git
 
 
-   
