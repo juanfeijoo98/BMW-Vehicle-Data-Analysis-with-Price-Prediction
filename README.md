@@ -1,4 +1,4 @@
-BMW Vehicle Data Analysis with Price Prediction
+# BMW Vehicle Data Analysis with Price Prediction
 
 📌 Overview
 
@@ -36,15 +36,31 @@ Mean Squared Error (MSE)
 
 R-squared (R²) Score
 
-Model Implementation Steps:
+Model Implementation
 
-Feature Selection: Removed unnecessary columns and selected relevant variables.
+# Import required libraries
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score
 
-Train-Test Split: Divided data into training (80%) and testing (20%) sets.
+# Create the model
+model = RandomForestRegressor(random_state=42)
 
-Model Training: Trained a RandomForestRegressor with default hyperparameters.
+# Train the model
+model.fit(X_train, y_train)
 
-Model Evaluation: Evaluated performance using MSE and R² score.
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Evaluate model performance
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+print(f"MSE: {mse}")
+print(f"R2 Score: {r2}")
+
+Model Results:
+
+MSE: 17684408.806016598
+R2 Score: 0.7779191886858828
 
 🔧 Technologies Used
 
@@ -74,7 +90,7 @@ Open the Jupyter Notebook and run the analysis.
 ✅ Model Training with Random Forest Regressor
 ✅ Model Evaluation
 
-🛠 Last updated: (06/02/2025)
+🛠 Last updated: (dd/mm/yyyy)
 
 📌 How to Contribute
 
@@ -93,3 +109,4 @@ Submit a Pull Request for review.
 📩 Contact
 
 📧 Email: juanfeijoo98@gmail.com🔗 LinkedIn: Profile🔗 GitHub: Repository
+
